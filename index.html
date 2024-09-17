@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Namorada</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            text-align: center;
+            color: #880e4f;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #d81b60;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ad1457;
+        }
+        #mensagem {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #880e4f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Oi amor meu</h1>
+    <h2>Tenho algo aqui (hihi)</h2>
+
+    <button onclick="mostrarMensagem('Só tu consegue me fazer me sentir tão bem de uma forma saudavel e incrievel, sem sombra de duvidas tu é o amor da minha vida..')">clica aqui</button>
+    <button onclick="mostrarMensagem('Cada segundo cntg é como se fosse cada segundo no paraiso. (ain pq vc nem sabe como é o paraiso) o paraiso é considerado um sinonimo de perfeição, e perfeição é um sinonimo de Ana, e Ana é voce, por isso eu sei q quando eu to cntg eu sou genuinamente feliz, me sinto genuinamente segura, e genuinamente apaixonada cada dia mais por ti.')">Ou aqui</button>
+    <button onclick="mostrarMensagem('Te amar é um sentimento unico, é um sentimento de que se eu te perder, eu me perco tbm, o sentimento de que eu posso explodir a cada momento de tanto amor. E toda vez que eu tiver oportunidade de demonstrar o quanto eu te amo eu vou. A melhor sensação do mundo é quando tu me beija, é quando tu me ama, quando eu te amo, o melhor momento é quando eu to cntg abraçada, as coisas mais incriveis que eu ja escutei e li na vida vieram de ti, eu espero passar cada segundo da minha vida fazendo parte da tua.')">pd ser aq tbm</button>
+
+    <div id="mensagem"></div>
+
+    <script>
+        function mostrarMensagem(mensagem) {
+            document.getElementById('mensagem').textContent = mensagem;
+        }
+    </script>
+
+</body>
+</html>
